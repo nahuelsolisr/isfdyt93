@@ -3,11 +3,23 @@ document.addEventListener("DOMContentLoaded", function() {
   ocultarContenido('no_titulo_secundario_content');
   ocultarContenido('si_titulo_secundario_content');
   ocultarContenido('horas_trabajo_content');
+  
 
 
   // Escuchar cambios en el radio button
   var trabajaSiRadio = document.getElementById('trabaja_si');
   var trabajaNoRadio = document.getElementById('trabaja_no');
+
+  var viveSoloSiRadio = document.getElementById('vive_solo_si');
+  var viveConContent = document.getElementById('vive_con_content');
+
+  viveSoloSiRadio.addEventListener('change', function() {
+    if (viveSoloSiRadio.checked) {
+      ocultarContenido('vive_con_content');
+    } else {
+      mostrarContenido('vive_con_content', 'vive_con_content');
+    }
+  });
 
   trabajaSiRadio.addEventListener('change', function () {
     if (trabajaSiRadio.checked) {

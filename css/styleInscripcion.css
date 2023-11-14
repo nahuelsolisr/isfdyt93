@@ -137,10 +137,11 @@ p.desc {
   color: #555; }
 
 .form-label {
-  display: block;
+  display: block ;
   width: 100%;
   font-size: 16px;
-  margin-bottom: 10px; }
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
 
 .text-input && select{
   font-size: 12px;
@@ -153,7 +154,7 @@ p.desc {
 
 input {
   width: 100%;
-  display: block;
+  display: flex;
   border: 1px solid #ebebeb;
   height: 50px;
   box-sizing: border-box;
@@ -181,7 +182,9 @@ select {
 .form-flex {
   margin: 0 -10px; }
   .form-flex .form-group {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 17%;
     padding: 0 10px; }
 
 .form-group,
@@ -754,6 +757,7 @@ input[type="radio"] {
 
 .form-flex  label{
   padding: 6px !important;
+  font-size: 12px;
 }
 
 input[type="checkbox"] {
@@ -763,3 +767,4 @@ input[type="checkbox"] {
   height: 30px !important;
   /* Otros estilos si es necesario */
 }
+
