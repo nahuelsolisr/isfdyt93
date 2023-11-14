@@ -121,13 +121,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label">Datos de nacimiento</label>
+                                <label class="form-label">Información de nacimiento</label>
                                 <input type="date" name="FechaNacimiento" id="FechaNacimiento" required />
                             </div>
                             <div class="form-group">
 
                                 <select name="PaisNacionalidadId" id="PaisNacionalidadId">
-                                    <option value="" disabled selected hidden>Seleccionar País de Nacionalidad</option>
+                                    <option value="" disabled selected hidden>País de nacimiento</option>
                                     <option value="Argentina">Argentina</option>
                                     <option value="Brasil">Brasil</option>
                                     <option value="Chile">Chile</option>
@@ -137,20 +137,21 @@
                             </div>
                             <div class="form-group">
                                 <select name="LocalidadNacimiento" id="LocalidadNacimiento">
-                                    <option value="" disabled selected hidden>Seleccionar Localidad</option>
+                                    <option value="" disabled selected hidden>Localidad</option>
                                     <option value="Domselaar">Domselaar</option>
                                     <option value="Alejandro korn">Alejandro Korn</option>
                                     <option value="San Vicente">San Vicente</option>
                                     <option value="Guernica">Guernica</option>
                                     <option value="Brandsen">Brandsen</option>
+                                    <option value="otraLocalidadN">Otra</option>
                                 </select>
                             </div>
 
 
                             <div class="form-group">
-                                <label class="form-label">Residencia </label>
+                                <label class="form-label">Reside </label>
                                 <select name="ProvinciaId" id="ProvinciaId">
-                                    <option value="" disabled selected hidden>Seleccionar Provincia</option>
+                                    <option value="" disabled selected hidden>Provincia</option>
                                     <option value="Buenos Aires">Buenos Aires</option>
                                     <option value="Catamarca">Catamarca</option>
                                     <option value="Chaco">Chaco</option>
@@ -179,12 +180,13 @@
 
                             <div class="form-group">
                                 <select name="LocalidadId" id="LocalidadId">
-                                    <option value="" disabled selected hidden>Seleccionar Localidad</option>
+                                    <option value="" disabled selected hidden>Localidad</option>
                                     <option value="Domselaar">Domselaar</option>
                                     <option value="Alejandro korn">Alejandro Korn</option>
                                     <option value="San Vicente">San Vicente</option>
                                     <option value="Guernica">Guernica</option>
                                     <option value="Brandsen">Brandsen</option>
+                                    <option value="otraLocalidadID">Otra</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -562,7 +564,7 @@
                             </div>
 
                             <!-- FamiliaresACargo -->
-                            <div class="form-row">
+                            <div class="form-row" id="familia_aCargo_content">
                                 <label class="form-label">¿Tiene familiares a cargo?</label>
                                 <div class="form-flex">
                                     <div class="form-group">
@@ -930,12 +932,12 @@
                             <div class="form-flex">
                                 <div class="form-group">
                                     <input type="radio" name="ObraSocialPrepaga" id="obra_social_si" value="SI"
-                                        onclick="mostrarDescripcionObraSocial('descripcion_obra_social_content','descripcion_obra_social_content')" required />
+                                         required />
                                     <label for="obra_social_si">Sí</label>
                                 </div>
                                 <div class="form-group">
                                     <input type="radio" name="ObraSocialPrepaga" id="obra_social_no" value="NO"
-                                        onclick="ocultarDescripcionObraSocial()" required />
+                                         required />
                                     <label for="obra_social_no">No</label>
                                 </div>
                             </div>
