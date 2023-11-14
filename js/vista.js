@@ -1,18 +1,29 @@
 document.addEventListener("DOMContentLoaded", function() {
-  //titulo
+  //oculto los campos al cargar la pagina
   ocultarContenido('no_titulo_secundario_content');
   ocultarContenido('si_titulo_secundario_content');
+
   ocultarContenido('horas_trabajo_content');
   ocultarContenido('sector_trabajo_content');
   ocultarContenido('horas_trabajo_content');
 
+  ocultarContenido('otro_titulo_content');
 
   ocultarContenido('descripcion_obra_social_content');
+
   ocultarContenido('descripcion_tratamiento_medico_content');
   ocultarContenido('descripcion_medicacion_content');
+
   ocultarContenido('descripcion_discapacidad_content');
   ocultarContenido('estado_discapacidad_content');
   ocultarContenido('certificado_discapacidad_content');
+
+  //variables que buscan el id 
+
+  var terciarioRadio = document.getElementById('mayor_titulo_terciario');
+  var universitarioRadio = document.getElementById('mayor_titulo_universitario');
+  var posgradoRadio = document.getElementById('mayor_titulo_posgrado');
+
   
   var trabajaSiRadio = document.getElementById('trabaja_si');
   var trabajaNoRadio = document.getElementById('trabaja_no');
@@ -32,8 +43,25 @@ document.addEventListener("DOMContentLoaded", function() {
   var medicacionSiRadio = document.getElementById('medicacion_si');
   var medicacionNoRadio = document.getElementById('medicacion_no');
 
-  
+  //radiobuttoms 
+  terciarioRadio.addEventListener('change', function () {
+    if (terciarioRadio.checked) {
+      mostrarContenido('otro_titulo_content', 'otro_titulo_content');
 
+    }
+  });
+  universitarioRadio.addEventListener('change', function () {
+    if (universitarioRadio.checked) {
+      mostrarContenido('otro_titulo_content', 'otro_titulo_content');
+
+    }
+  });
+  posgradoRadio.addEventListener('change', function () {
+    if (posgradoRadio.checked) {
+      mostrarContenido('otro_titulo_content', 'otro_titulo_content');
+
+    }
+  });
 
 
   viveSoloSiRadio.addEventListener('change', function() {
