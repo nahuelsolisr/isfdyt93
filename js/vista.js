@@ -4,14 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
   ocultarContenido('si_titulo_secundario_content');
   ocultarContenido('horas_trabajo_content');
   
-
-
-  // Escuchar cambios en el radio button
+  var viveConContent = document.getElementById('vive_con_content');
   var trabajaSiRadio = document.getElementById('trabaja_si');
   var trabajaNoRadio = document.getElementById('trabaja_no');
-
   var viveSoloSiRadio = document.getElementById('vive_solo_si');
-  var viveConContent = document.getElementById('vive_con_content');
+  
 
   viveSoloSiRadio.addEventListener('change', function() {
     if (viveSoloSiRadio.checked) {
@@ -35,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-//y las funcionas aqui
+
 
 
 function bloquearOpciones() {

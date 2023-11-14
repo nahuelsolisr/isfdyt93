@@ -7,7 +7,7 @@
     <meta name="author" content="colorlib.com">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inscripcion a carrera</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
@@ -317,7 +317,7 @@
                         </div>
 
                         <!-- Otro Título -->
-                        <div id="otro_titulo_content">
+                        <div id="otro_titulo_content" hidden>
                             <div class="form-row">
                                 <div class="form-group">
                                     <input type="text" name="OtroTitulo" id="otro_titulo" placeholder="Otros títulos"
@@ -521,7 +521,7 @@
                     </fieldset>
                     <h3>Familia y becas</h3>
                     <fieldset>
-                        <h2>complete los campos</h2>
+                        <h2>Familia y estado ante becas</h2>
                         <div class="fieldset-content">
                             <!-- ViveSolo -->
                             <div class="form-row">
@@ -930,12 +930,12 @@
                             <div class="form-flex">
                                 <div class="form-group">
                                     <input type="radio" name="ObraSocialPrepaga" id="obra_social_si" value="SI"
-                                        required />
+                                        onclick="mostrarDescripcionObraSocial('descripcion_obra_social_content','descripcion_obra_social_content')" required />
                                     <label for="obra_social_si">Sí</label>
                                 </div>
                                 <div class="form-group">
                                     <input type="radio" name="ObraSocialPrepaga" id="obra_social_no" value="NO"
-                                        required />
+                                        onclick="ocultarDescripcionObraSocial()" required />
                                     <label for="obra_social_no">No</label>
                                 </div>
                             </div>
@@ -1041,7 +1041,7 @@
                         </div>
 
                         <!-- Certificado -->
-                        <div class="form-row">
+                        <div class="form-row" id="certificado_discapacidad_content">
                             <label class="form-label">¿Tienes certificado de discapacidad?</label>
                             <div class="form-flex">
                                 <div class="form-group">
@@ -1075,16 +1075,36 @@
                     </fieldset>
 
 
-
-
-
-
-
-
                 </div>
             </form>
         </div>
 
+        <footer><div class="box-container">
+            <div class="box">
+                <h3>Horario de atención</h3>
+                <p>De lunes a viernes de 18:30 a 22:30 hs.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contacto</h3>
+                <p>2225481175 / 2225484015</p>
+                <div class="share"><a href="#" class="fa-solid fa-envelope"></a></div>
+                
+            </div>
+            <div class="box">
+                <h3>Localizacion</h3>
+                <p>Av. San Martín 101 – (1865) San Vicente</p>
+            </div>
+        </div>
+        <div class="credit">
+            <h3>ISFT N93 | 2024</h3>
+        </div>
+    </section></footer>
+            
 
 
         <!-- JS -->
@@ -1097,6 +1117,7 @@
         <script src="vendor/wnumb/wNumb.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vista.js"></script>
+        <script src="js/vista2.js"></script>
 </body>
 
 </html>
