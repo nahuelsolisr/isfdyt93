@@ -89,6 +89,11 @@ input[type=radio] {
   -o-appearance: radio !important;
   -ms-appearance: radio !important; }
 
+  html{
+    overflow-x: hidden;
+  }
+
+
 .clear {
   clear: both; }
 
@@ -97,7 +102,7 @@ h2 {
   margin: 0px; }
 
 body {
-  width: 94%;
+  width: 100%;
   font-size: 14px;
   line-height: 1.6;
   color: #222;
